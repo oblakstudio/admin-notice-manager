@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/oblakstudio/admin-notice-manager/compare/v1.0.0...v1.0.1) (2022-01-30)
+
+
+### Bug Fixes
+
+* **build:** Fixed release file ([915757c](https://github.com/oblakstudio/admin-notice-manager/commit/915757c9459103da646ec62a9780214eb0d690ee))
+
 # 1.0.0 (2022-01-30)
 
 
