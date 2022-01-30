@@ -7,6 +7,6 @@ sed -i "s/\"version\": \"$CURRENT_VERSION\"/\"version\": \"$NEXT_VERSION\"/g" co
 sed -i "s/version = '$CURRENT_VERSION'/version = '$NEXT_VERSION'/g" src/Admin_Notice_Manager.php
 
 mkdir /tmp/admin-notice-manager
-cp -ar src composer.json composer.lock README.md CHANGELOG.md /tmp/release 2>/dev/null
+cp -ar src composer.json composer.lock README.md CHANGELOG.md /tmp/admin-notice-manager 2>/dev/null
 cd /tmp
 zip -qr /tmp/release.zip admin-notice-manager
