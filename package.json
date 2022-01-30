@@ -1,4 +1,5 @@
 {
+    "license": "GPLV2",
     "scripts": {
         "semantic-release": "semantic-release"
     },
