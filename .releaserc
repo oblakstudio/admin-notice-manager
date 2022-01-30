@@ -7,7 +7,7 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       ["@semantic-release/exec", {
-        "prepareCmd": "sh ./build/release.sh ${nextRelease.version}"
+        "prepareCmd": "sh ./.github/scripts/release.sh ${nextRelease.version}"
       }],
       ["@semantic-release/git", {
         "assets": ["CHANGELOG.md", "composer.json", "src/Admin_Notice_Manager.php"],
