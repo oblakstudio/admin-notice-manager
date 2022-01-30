@@ -96,7 +96,7 @@ class Admin_Notice_Manager {
     /**
      * Stores notices to database
      */
-    private function store_notices() {
+    public function store_notices() {
         update_option( 'admin_notice_manager_notices', $this->get_notices() );
     }
 
