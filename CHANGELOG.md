@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/oblakstudio/admin-notice-manager/compare/v1.0.2...v1.1.0) (2022-02-22)
+
+
+### Features
+
+* removed namespacing from manager ([0417d03](https://github.com/oblakstudio/admin-notice-manager/commit/0417d0334e7ed99b8656aa2b37c234a0eaf2b5b6))
+
 ## [1.0.2](https://github.com/oblakstudio/admin-notice-manager/compare/v1.0.1...v1.0.2) (2022-01-30)
 
 
