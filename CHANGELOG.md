@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/oblakstudio/admin-notice-manager/compare/v1.0.1...v1.0.2) (2022-01-30)
+
+
+### Bug Fixes
+
+* Fixed method scope ([878f8a3](https://github.com/oblakstudio/admin-notice-manager/commit/878f8a333fe7d81ad45b0b913d4125d6f40377d5))
+
 ## [1.0.1](https://github.com/oblakstudio/admin-notice-manager/compare/v1.0.0...v1.0.1) (2022-01-30)
 
 
