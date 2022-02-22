@@ -103,23 +103,10 @@ class Admin_Notice_Manager {
     /**
      * Retrieves the stored notices
      *
-     * @param  string $namespace Notice namespace. If empty, will retrieve all notices.
      * @return array             Array of notices
      */
-    public function get_notices( $namespace = '' ) {
-        if ( '' === $namespace ) {
-            return $this->notices;
-        }
-
-        $notices = array();
-
-        foreach ( $this->notices as $name => $notice ) {
-            if ( strpos( $name, $namespace, 0 ) !== false ) {
-                $notices[ $name ] = $notice;
-            }
-        }
-
-        return $notices;
+    public function get_notices() {
+        return $this->notices;
     }
 
     /**
@@ -160,11 +147,10 @@ class Admin_Notice_Manager {
      *
      * @param  string $name       Notice name.
      * @param  array  $args       Notice arguments.
-     * @param  string $namespace  Notice namespace.
      * @param  bool   $force_save Force the notice to be added if it's already registered.
      * @return bool               True if the notice was added, false otherwise.
      */
-    public function add_notice( $name, $args, $namespace = 'default', $force_save = false ) {
+    public function add_notice( $name, $args, $force_save = false ) {
         if ( $this->has_notice( $name ) && ! $force_save ) {
             return false;
         }
@@ -176,7 +162,7 @@ class Admin_Notice_Manager {
             'screen_ids'  => array(),
             'post_ids'    => array(),
             'dismissible' => true,
-            'persistant'  => true,
+            'persistent'  => true,
             'dismiss_all' => false,
         );
 
@@ -187,7 +173,7 @@ class Admin_Notice_Manager {
             return false;
         }
 
-        $this->notices[ $namespace . '_' . $name ] = $args;
+        $this->notices[ $name ] = $args;
 
         if ( $force_save ) {
             $this->store_notices();
@@ -309,25 +295,6 @@ class Admin_Notice_Manager {
                 $dismiss_url,
             );
         }
-
-        // $dismiss_all_url = add_query_arg(
-        // array(
-        // 'action' => 'admin_notice_manager_dismiss_all',
-        // 'nonce'  => wp_create_nonce( 'admin_notice_manager_dismiss_all' ),
-        // )
-        // );
-
-        // $dismiss_all_url = wp_nonce_url( $dismiss_all_url, 'admin_notice_manager_dismiss_all' );
-
-        // $dismiss_url = add_query_arg(
-        // array(
-        // 'action' => 'admin_notice_manager_dismiss',
-        // 'nonce'  => wp_create_nonce( 'admin_notice_manager_dismiss' ),
-        // 'name'   => $name,
-        // )
-        // );
-
-        // $dismiss_url = wp_nonce_url( $dismiss_url, 'admin_notice_manager_dismiss' );
 
         add_action(
             'admin_notices',
