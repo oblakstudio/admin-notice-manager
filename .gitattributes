@@ -1,4 +1,5 @@
 # Ignore all test and documentation with "export-ignore".
+/.yarn           export-ignore
 /.github         export-ignore
 /.editorconfig   export-ignore
 /.gitattributes  export-ignore

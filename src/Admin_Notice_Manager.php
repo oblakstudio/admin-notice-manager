@@ -331,10 +331,11 @@ class Admin_Notice_Manager {
 
         if ( file_exists( $args['message'] ) ) {
             ob_start();
+            extract( $args['file_args'] ?? array() ); //phpcs:ignore WordPress.PHP.DontExtract.extract_extract
             require $args['message'];
             return ob_get_clean();
         }
 
-        return $args['message'];
+        return '<p>' . $args['message'] . '</p>';
     }
 }

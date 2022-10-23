@@ -1,3 +1,11 @@
 node_modules
 vendor
 package-json.lock
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

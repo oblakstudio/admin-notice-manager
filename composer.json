@@ -5,7 +5,7 @@
     "version": "1.0.2",
     "autoload": {
         "psr-4": {
-            "Oblak\\": "src/"
+            "Oblak\\WP\\": "src/"
         }
     },
     "require": {
@@ -24,5 +24,10 @@
         "post-install-cmd": [
             "@install-codestandards"
         ]
-      }
+      },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }
