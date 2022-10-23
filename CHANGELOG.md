@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/oblakstudio/admin-notice-manager/compare/v1.1.0...v1.2.0) (2022-10-23)
+
+
+### Bug Fixes
+
+* **build:** Fixed build workflow ([bfb9f43](https://github.com/oblakstudio/admin-notice-manager/commit/bfb9f437ed418864f151b816348c2d4f4538482f))
+* **build:** Fixed build workflow ([f8acaf5](https://github.com/oblakstudio/admin-notice-manager/commit/f8acaf5cabffdbae256a259bd0b7d8c5138d5989))
+
+
+### Features
+
+* Added file arguments when parsing files ([0c687f8](https://github.com/oblakstudio/admin-notice-manager/commit/0c687f869fc6310d5791934e3a68def0230c0cc2))
+
 # [1.1.0](https://github.com/oblakstudio/admin-notice-manager/compare/v1.0.2...v1.1.0) (2022-02-22)
 
 
