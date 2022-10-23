@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/oblakstudio/admin-notice-manager/compare/v1.2.0...v2.0.0) (2022-10-23)
+
+
+### Features
+
+* Updated namespace ([b478f1b](https://github.com/oblakstudio/admin-notice-manager/commit/b478f1bc0cb218d54eaf7feef53470dfa35c6465))
+
+
+### BREAKING CHANGES
+
+* You must use new namespace in order to use the class
+
 # [1.2.0](https://github.com/oblakstudio/admin-notice-manager/compare/v1.1.0...v1.2.0) (2022-10-23)
 
 

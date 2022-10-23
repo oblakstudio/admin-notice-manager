@@ -18,7 +18,7 @@ class Admin_Notice_Manager {
      *
      * @var string
      */
-    public $version = '1.2.0';
+    public $version = '2.0.0';
 
     /**
      * Class singleton instance
